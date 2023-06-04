@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(99, 99, 99);
+}
+body div,form,.info_person{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+}
+body{
+    height:100vh;
+}
+h1,h2{
+    color:#fff
+}
+form{
+    background-color:#fff;
+    padding:20px;
+    width:40%;
+    border-radius:4px;
+    justify-content:space-between;
+    flex-direction:row;
+}
+input[type="file"]{
+    display:none;
+}
+#sfb,input[type="submit"]{
+    background-color:#87CEEB;
+    border:1px solid #87CEEB;
+    width:300px;
+    text-align:center;
+    padding:5px 10px;
+    border-radius:10px;
+    color:#fff;
+}
+#showNameFile,.info_person p span{
+    color:rgb(128, 128, 128);
+    font-size:0.8rem;
+}
+input[type="submit"]{
+    background-color:rgb(99, 99, 99);
+    border:1px solid rgb(99, 99, 99);
+}
+
+/*
+    DATA LAYOUT
+*/
+
+.data_list{
+    background-color:#fff;
+    padding:20px;
+    border-radius:4px;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 10px;
+    list-style: none;
+    margin:10px auto;
+    justify-content: center
+}
+
+.info_person{
+    border:1px solid rgb(211, 211, 211);
+    align-items:start;
+    justify-content:flex-start;
+    flex-direction:column;
+}
+.info_person p{
+    margin:5px
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+      width: 80%;
+      background-color: red !important;
+    }
+  }
